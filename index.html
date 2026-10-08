@@ -113,9 +113,9 @@
             </button>
 
             <!-- Row 5 -->
-            <button class="icon-card" onclick="showPage('info')">
-                <div class="icon-circle"><i data-lucide="info"></i></div>
-                <span>Infos</span>
+            <button class="icon-card" onclick="showPage('honesty-store')">
+                <div class="icon-circle"><i data-lucide="store"></i></div>
+                <span>Honesty Store</span>
             </button>
             <button class="icon-card" onclick="showPage('emergency')">
                 <div class="icon-circle"><i data-lucide="siren"></i></div>
@@ -190,6 +190,21 @@
                     </button>
                 </div>
 
+                <!-- NETFLIX -->
+                <div class="info-block">
+                    <h4>
+                        <i data-lucide="tv" class="icon-sm"></i>
+                        NETFLIX
+                    </h4>
+
+                    <button
+                            class="btn-secondary"
+                            onclick="showPage('tutorial-netflix')"
+                    >
+                        <i data-lucide="play-circle" class="icon-sm"></i>
+                        Watch Tutorial
+                    </button>
+                </div>
 
                 <!-- AIRCON -->
                 <div class="info-block">
@@ -211,9 +226,9 @@
                     </button>
                 </div>
 
-
                 <!-- GENERATOR -->
-                <div class="info-block">
+                <!--<div class="info-block">
+
                     <h4>
                         <i data-lucide="zap" class="icon-sm"></i>
                         How to Turn On Generator
@@ -231,9 +246,11 @@
                         Watch Tutorial
                     </button>
                 </div>
+                -->
 
 
                 <!-- SHOWER -->
+                <!--
                 <div class="info-block">
                     <h4>
                         <i data-lucide="shower-head" class="icon-sm"></i>
@@ -252,9 +269,10 @@
                         Watch Tutorial
                     </button>
                 </div>
-
+                -->
 
                 <!-- RANGE HOOD -->
+                <!--
                 <div class="info-block">
                     <h4>
                         <i data-lucide="wind" class="icon-sm"></i>
@@ -273,6 +291,7 @@
                         Watch Tutorial
                     </button>
                 </div>
+                -->
 
             </div>
 
@@ -303,7 +322,7 @@
                         preload="metadata"
                 >
                     <source
-                            src="videos/T2%20Tv.mp4"
+                            src="videos/T3%20TV.mp4"
                             type="video/mp4"
                     >
 
@@ -316,6 +335,51 @@
                     <ol>
                         <li>Press the Power button on the remote.</li>
                         <li>Wait for the TV to turn on.</li>
+                    </ol>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- NETFLIX -->
+    <section id="tutorial-netflix" class="page content-page">
+
+        <div class="content-header">
+            <button class="back-btn" onclick="showPage('tutorials')">
+                <i data-lucide="arrow-left"></i>
+            </button>
+
+            <h2>NETFLIX Tutorial</h2>
+        </div>
+
+        <div class="content-body">
+
+            <div class="content-card">
+
+                <h3>NETFLIX</h3>
+
+                <video
+                        class="tutorial-video"
+                        controls
+                        playsinline
+                        preload="metadata"
+                >
+                    <source
+                            src="videos/T3%20Netflix.mp4"
+                            type="video/mp4"
+                    >
+
+                    Your browser does not support video playback.
+                </video>
+
+                <div class="info-block">
+                    <h4>Instructions</h4>
+
+                    <ol>
+                        <li>Press the NETFLIX button on the remote.</li>
                     </ol>
                 </div>
 
@@ -349,7 +413,7 @@
                         preload="metadata"
                 >
                     <source
-                            src="videos/T2%20Aircon.mp4"
+                            src="videos/T3%20Aircon.mp4"
                             type="video/mp4"
                     >
 
@@ -648,7 +712,7 @@
 
                 <div class="wifi-row">
                     <span class="label">Network Name</span>
-                    <span class="value" id="wifi-name">Globe At Home_ea930</span>
+                    <span class="value" id="wifi-name">GFiber_5AC57</span>
                     <button class="copy-btn" onclick="copyText('wifi-name')">
                         Copy
                     </button>
@@ -656,7 +720,7 @@
 
                 <div class="wifi-row">
                     <span class="label">Password</span>
-                    <span class="value" id="wifi-pass">xCKnB2aZ</span>
+                    <span class="value" id="wifi-pass">KP2AmCnV</span>
                     <button class="copy-btn" onclick="copyText('wifi-pass')">
                         Copy
                     </button>
@@ -682,9 +746,9 @@
                 <div class="note">
                     <i data-lucide="info" class="icon-sm"></i>
                     <span>
-          Please do not reset or modify the WiFi router settings.
-          If the connection is still unavailable, contact us for assistance.
-        </span>
+              Please do not reset or modify the WiFi router settings.
+              If the connection is still unavailable, contact us for assistance.
+            </span>
                 </div>
 
             </div>
@@ -1463,105 +1527,174 @@
 
     </section>
 
-    <!-- INFO -->
-    <section id="info" class="page content-page">
+    <!-- HONESTY STORE -->
+    <section id="honesty-store" class="page content-page">
 
         <div class="content-header">
             <button class="back-btn" onclick="showPage('menu')">
                 <i data-lucide="arrow-left"></i>
             </button>
-            <h2>Useful Info</h2>
+            <h2>Honesty Store</h2>
         </div>
 
         <div class="content-body">
 
             <div class="content-card">
 
+                <!-- INTRO -->
                 <div class="info-block">
                     <h4>
-                        <i data-lucide="trash-2" class="icon-sm"></i>
-                        Trash
+                        <i data-lucide="store" class="icon-sm"></i>
+                        Honesty Store
                     </h4>
 
                     <p>
-                        The trash area is located near the
-                        <strong>elevator and fire exit</strong>.
-                    </p>
-
-                    <p>
-                        Please keep trash properly bagged and tidy.
-                        You may also place your gathered trash beside the unit door
-                        and we can arrange collection.
+                        Feel free to take what you need from our
+                        <strong>Honesty Store</strong>.
+                        Please leave the correct payment in the box provided or via GCash.
                     </p>
                 </div>
 
 
+                <!-- SNACKS -->
                 <div class="info-block">
                     <h4>
-                        <i data-lucide="snowflake" class="icon-sm"></i>
-                        Air Conditioning
+                        <i data-lucide="cookie" class="icon-sm"></i>
+                        Snacks
                     </h4>
 
-                    <p>
-                        The unit is equipped with air conditioning.
-                        Please turn off the air conditioner when leaving the unit
-                        to help conserve energy.
-                    </p>
+                    <div class="store-list">
+
+                        <div class="store-item">
+                            <span>Small Chips</span>
+                            <strong>₱12</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Fudgee Bar</span>
+                            <strong>₱12</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Cloud 9</span>
+                            <strong>₱15</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Big Chips</span>
+                            <strong>₱25</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Piattos</span>
+                            <strong>₱50</strong>
+                        </div>
+
+                    </div>
                 </div>
 
 
+                <!-- NOODLES -->
                 <div class="info-block">
                     <h4>
-                        <i data-lucide="droplets" class="icon-sm"></i>
-                        Water
+                        <i data-lucide="soup" class="icon-sm"></i>
+                        Noodles
                     </h4>
 
-                    <p>
-                        Running water is available in the unit.
-                        Please make sure faucets are properly turned off after use.
-                    </p>
+                    <div class="store-list">
+
+                        <div class="store-item">
+                            <span>Pancit Canton</span>
+                            <strong>₱30</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Cup Noodles</span>
+                            <strong>₱45</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Ramyeon</span>
+                            <strong>₱80</strong>
+                        </div>
+
+                    </div>
                 </div>
 
 
-                <div class="info-block">
-                    <h4>
-                        <i data-lucide="shopping-bag" class="icon-sm"></i>
-                        Shopping & Essentials
-                    </h4>
-
-                    <p>
-                        <strong>Ayala Central Bloc</strong> is just a short walk away
-                        and offers restaurants, shops, groceries, and everyday essentials.
-                    </p>
-
-                    <p>
-                        <strong>Opening time: 10:00 AM</strong>
-                    </p>
-                </div>
-
-
+                <!-- DRINKS & BEVERAGES -->
                 <div class="info-block">
                     <h4>
                         <i data-lucide="coffee" class="icon-sm"></i>
-                        Nearby Essentials
+                        Drinks &amp; Beverages
                     </h4>
 
-                    <p>
-                        Convenience stores, cafés, restaurants, pharmacies,
-                        and other everyday essentials are available around
-                        Cebu IT Park and within walking distance.
-                    </p>
+                    <div class="store-list">
+
+                        <div class="store-item">
+                            <span>Milo</span>
+                            <strong>₱12</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Coffee</span>
+                            <strong>₱12</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Energen</span>
+                            <strong>₱12</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Yakult</span>
+                            <strong>₱15</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Dutchmill</span>
+                            <strong>₱20</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Nutriboost</span>
+                            <strong>₱20</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Small Soda</span>
+                            <strong>₱25</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Bottled Water</span>
+                            <strong>₱30</strong>
+                        </div>
+
+                        <div class="store-item">
+                            <span>Can Soda</span>
+                            <strong>₱50</strong>
+                        </div>
+
+                    </div>
                 </div>
 
 
+                <!-- HONESTY NOTE -->
                 <div class="note">
-                    <i data-lucide="info" class="icon-sm"></i>
+                    <i data-lucide="heart" class="icon-sm"></i>
 
                     <span>
-          If you need help with anything inside the unit,
-          please contact us through the
-          <strong>Contact</strong> section.
-        </span>
+                    Please take what you need and leave the correct payment
+                    in the <strong>honesty box or via GCASH</strong>.
+                    Thank you for being honest!
+                </span>
+
+                </div>
+
+                <div class="honesty-images">
+                    <img src="images/T3%20Honesty%20Store.png" alt="Honesty Store">
+                    <img src="images/T3%20Gcash.jfif" alt="GCash Payment">
                 </div>
 
             </div>

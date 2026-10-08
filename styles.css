@@ -986,6 +986,66 @@ img {
 
     line-height: 1.55;
 }
+/* HONESTY STORE PAYMENT IMAGES */
+.honesty-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.honesty-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.honesty-content > span {
+    display: block;
+    line-height: 1.5;
+}
+.honesty-images {
+    width: 100%;
+    margin-top: 18px;
+}
+
+.honesty-images img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 16px 0;
+    border-radius: 8px;
+}
+.store-list {
+    margin-top: 12px;
+}
+
+.store-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    gap: 20px;
+}
+
+.store-item:last-child {
+    border-bottom: none;
+}
+
+.store-item span {
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.store-item strong {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #203d28;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
 
 .note i {
     color: var(--accent-dark);
@@ -1537,6 +1597,7 @@ img {
 
 #tutorial-tv,
 #tutorial-aircon,
+#tutorial-netflix,
 #tutorial-generator,
 #tutorial-shower,
 #tutorial-range-hood {
@@ -1551,6 +1612,7 @@ img {
 
 #tutorial-tv .content-header,
 #tutorial-aircon .content-header,
+#tutorial-netflix .content-header,
 #tutorial-generator .content-header,
 #tutorial-shower .content-header,
 #tutorial-range-hood .content-header {
@@ -1568,6 +1630,7 @@ img {
 /* Back button stays on the left */
 #tutorial-tv .content-header .back-btn,
 #tutorial-aircon .content-header .back-btn,
+#tutorial-netflix .content-header .back-btn,
 #tutorial-generator .content-header .back-btn,
 #tutorial-shower .content-header .back-btn,
 #tutorial-range-hood .content-header .back-btn {
@@ -1581,6 +1644,7 @@ img {
 /* Title is truly centered */
 #tutorial-tv .content-header h2,
 #tutorial-aircon .content-header h2,
+#tutorial-netflix .content-header h2,
 #tutorial-generator .content-header h2,
 #tutorial-shower .content-header h2,
 #tutorial-range-hood .content-header h2 {
@@ -1600,6 +1664,7 @@ img {
 
 #tutorial-tv .content-body,
 #tutorial-aircon .content-body,
+#tutorial-netflix .content-body,
 #tutorial-generator .content-body,
 #tutorial-shower .content-body,
 #tutorial-range-hood .content-body {
@@ -1615,6 +1680,7 @@ img {
 
 #tutorial-tv .content-card,
 #tutorial-aircon .content-card,
+#tutorial-netflix .content-card,
 #tutorial-generator .content-card,
 #tutorial-shower .content-card,
 #tutorial-range-hood .content-card {
@@ -1632,6 +1698,7 @@ img {
 
 #tutorial-tv .content-card > h3,
 #tutorial-aircon .content-card > h3,
+#tutorial-netflix .content-card > h3,
 #tutorial-generator .content-card > h3,
 #tutorial-shower .content-card > h3,
 #tutorial-range-hood .content-card > h3 {
@@ -1646,6 +1713,7 @@ img {
 
 #tutorial-tv .tutorial-video,
 #tutorial-aircon .tutorial-video,
+#tutorial-netflix .tutorial-video,
 #tutorial-generator .tutorial-video,
 #tutorial-shower .tutorial-video,
 #tutorial-range-hood .tutorial-video {
@@ -1666,6 +1734,7 @@ img {
 
 #tutorial-tv .info-block,
 #tutorial-aircon .info-block,
+#tutorial-netflix .info-block,
 #tutorial-generator .info-block,
 #tutorial-shower .info-block,
 #tutorial-range-hood .info-block {
@@ -1678,6 +1747,7 @@ img {
 
 #tutorial-tv .info-block h4,
 #tutorial-aircon .info-block h4,
+#tutorial-netflix .info-block h4,
 #tutorial-generator .info-block h4,
 #tutorial-shower .info-block h4,
 #tutorial-range-hood .info-block h4 {
@@ -1687,6 +1757,7 @@ img {
 
 #tutorial-tv .info-block ol,
 #tutorial-aircon .info-block ol,
+#tutorial-netflix .info-block ol,
 #tutorial-generator .info-block ol,
 #tutorial-shower .info-block ol,
 #tutorial-range-hood .info-block ol {
@@ -1697,11 +1768,62 @@ img {
 
 #tutorial-tv .info-block li,
 #tutorial-aircon .info-block li,
+#tutorial-netflix .info-block li,
 #tutorial-generator .info-block li,
 #tutorial-shower .info-block li,
 #tutorial-range-hood .info-block li {
     margin-bottom: 10px;
     line-height: 1.6;
+}
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row:last-of-type {
+    border-bottom: none;
+}
+
+.info-row .label {
+    color: #888;
+    font-size: 0.9rem;
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+.info-row .value {
+    text-align: right;
+    font-weight: 500;
+    color: #333;
+}
+
+.info-row.address .value {
+    text-align: right;
+    line-height: 1.5;
+}
+
+.info-row.highlight {
+    background: #f8f9fa;
+    margin: 8px -12px;
+    padding: 12px;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.info-row .code {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 24px 0 16px;
 }
 
 
